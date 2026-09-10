@@ -1,0 +1,12 @@
+numpy>=1.22
+scipy>=1.10
+pandas>=1.3.0
+matplotlib>=3.7
+numba>=0.58
+seaborn
+toml
+dtai-locomotif @ git+https://github.com/ML-KULeuven/locomotif@6924c2a85a6f41745754e128a37cd07841c7134f
+
+pre_commit
+black
+isort

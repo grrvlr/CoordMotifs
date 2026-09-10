@@ -1,0 +1,22 @@
+[project]
+name = "sub_tsmd"
+version = "0.0.1"
+description = "Subspace Time Series Motif Discovery"
+authors = [
+    {name = "Louis Carpentier", email = "louis.carpentier@kuleuven.be"}
+]
+dynamic = ["dependencies"]
+
+[project.license]
+file = "LICENSE"
+
+[build-system]
+requires = ["setuptools", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sub_tsmd", "sub_tsmd.*"]  # alternatively: `exclude = ["additional*"]`
+namespaces = false
+
+[tool.setuptools.dynamic.dependencies]
+file = ["requirements.txt"]
