@@ -19,9 +19,9 @@ CoordMotifs/
 ## Usage
 
 ```python
-from src.coordmotifs import CoordMotifs
+from src.final_algo import CoordMotifs
 from multivariate_tsmd.utils import plot_signal_and_submotifs
-from multivariate_tsmd.multivariate_synthetic_signal import NewMultivariateSignalGenerator
+from multivariate_tsmd.new_multivariate_synthetic_signal import NewMultivariateSignalGenerator
 
 # Generate synthetic signal
 signal_gen = NewMultivariateSignalGenerator(n_motifs=3, n_d=10, n_actives_dimensions_ratio=0.3, motif_length=100)
