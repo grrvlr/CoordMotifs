@@ -16,3 +16,28 @@ CoordMotifs/
 ├── ...
 └── README.md
 ```
+## Usage
+
+```python
+from src.coordmotifs import CoordMotifs
+from multivariate_tsmd.utils import plot_signal_and_submotifs
+from multivariate_tsmd.multivariate_synthetic_signal import NewMultivariateSignalGenerator
+
+# Generate synthetic signal
+signal_gen = NewMultivariateSignalGenerator(n_motifs=3, n_d=10, n_actives_dimensions_ratio=0.3, motif_length=100)
+signal, labels = signal_gen.generate()
+
+# Initialize the method
+cm = CoordMotifs(
+    wlen = 100, n_patterns=3
+)
+# Discover coordinated motifs
+cm.fit(signal)
+
+# Plot the discovered motifs
+plot_signal_and_submotifs(signal,cm.prediction_mask_, cm.prediction_dimension_)
+
+```html
+<p align="center">
+  <img src="figures/readme_example.png" width="800">
+</p>
