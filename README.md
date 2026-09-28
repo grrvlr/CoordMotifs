@@ -37,7 +37,7 @@ cm.fit(signal)
 # Plot the discovered motifs
 plot_signal_and_submotifs(signal,cm.prediction_mask_, cm.prediction_dimension_)
 
-```html
+```
 <p align="center">
   <img src="figures/readme_example.png" width="800">
 </p>
